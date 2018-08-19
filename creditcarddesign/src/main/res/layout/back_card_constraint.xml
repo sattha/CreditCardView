@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back_card_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:background="@drawable/card_color_round_rect_pink"
+    tools:visibility="visible">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/back_card_cvv"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/sign_strip"
+        android:gravity="center|end"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:paddingRight="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="522" />
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_billing_mastercard_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
