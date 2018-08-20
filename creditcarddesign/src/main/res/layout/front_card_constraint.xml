@@ -85,7 +85,7 @@
 
             <TextView
                 android:id="@+id/card_name_label"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/card_holder"
                 android:textColor="@android:color/darker_gray"
@@ -96,7 +96,7 @@
 
             <android.support.v7.widget.AppCompatTextView
                 android:id="@+id/front_card_holder_name"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:hint="@string/card_holder_name_sample"
@@ -154,6 +154,7 @@
                 app:autoSizeTextType="uniform" />
 
         </LinearLayout>
+
     </LinearLayout>
 
 
