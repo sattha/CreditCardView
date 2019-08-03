@@ -1,8 +1,9 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/front_card_outline"
-    android:layout_width="@dimen/card_width_normal"
-    android:layout_height="@dimen/card_height_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/card_color_round_rect_default"
     android:orientation="vertical">
 
@@ -11,8 +12,11 @@
         android:layout_width="@dimen/chip_width_normal"
         android:layout_height="@dimen/chip_height_normal"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/chip">
+        android:background="@drawable/chip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <View
             android:id="@+id/chip_inner_view"
@@ -32,7 +36,10 @@
         android:layout_alignTop="@+id/chip_container"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:src="@drawable/ic_billing_visa_logo" />
+        android:src="@drawable/ic_billing_visa_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/chip_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chip_container" />
 
 
     <ImageView
@@ -40,8 +47,17 @@
         android:layout_width="@dimen/center_image_width"
         android:layout_height="@dimen/center_image_height"
         android:layout_centerInParent="true"
-        tools:src="@drawable/img_amex_center_face"
-        />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/img_amex_center_face" />
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
